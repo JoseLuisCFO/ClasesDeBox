@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Escuela de Box en Ciudad de México | Knock Out Boxing Club · Tlalpan 450</title>
-<meta name="description" content="Escuela de box en Ciudad de México con más de 500 alumnos activos. Clases para niños, mujeres y adultos. Box olímpico y competitivo siguiendo los estándares del WBC. Enfrente del Metro Viaducto Línea 2. Primera clase gratis.">
-<meta name="keywords" content="escuela de box CDMX, escuela de boxeo Ciudad de México, clases de box para niños Ciudad de México, escuela de box femenil CDMX, box olímpico Ciudad de México, escuela de boxeo Iztacalco, clases de box metro Viaducto, Knock Out Boxing Club, gimnasio de box CDMX, aprender box CDMX">
+<title>Clases de Box en Ciudad de México | Knock Out Boxing Club · Metro Viaducto</title>
+<meta name="description" content="Clases de box en Ciudad de México, a metros del Metro Viaducto Línea 2. Más de 500 alumnos. Box para niños, mujeres y adultos siguiendo estándares WBC. Clase Muestra Gratis. Calzada de Tlalpan 450, Iztacalco.">
+<meta name="keywords" content="clases de box CDMX, escuela de box Ciudad de México, clases de boxeo metro Viaducto, box para niños CDMX, box femenil Ciudad de México, escuela de box Iztacalco, clases de box Calzada Tlalpan, Knock Out Boxing Club, gimnasio de box CDMX, aprender box Ciudad de México, box olímpico CDMX, clases de boxeo Iztacalco">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Escuela de Box en Ciudad de México | Knock Out Boxing Club · Tlalpan 450">
-<meta property="og:description" content="Más de 500 alumnos activos. Escuela de box en CDMX siguiendo los estándares del WBC. Enfrente del Metro Viaducto Línea 2.">
+<meta property="og:title" content="Clases de Box en Ciudad de México | Metro Viaducto L2 · Knock Out Boxing Club">
+<meta property="og:description" content="Más de 500 alumnos activos. Clases de box en CDMX, enfrente del Metro Viaducto. Estándares WBC. Primera clase gratis.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Knock Out Boxing Club","description":"Escuela de box en Ciudad de México. Clases para todas las edades siguiendo los estándares del WBC.","telephone":"+5215563580441","email":"knockoutboxingclub01@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Calzada de Tlalpan 450, Primer Piso","addressLocality":"Iztacalco","addressRegion":"Ciudad de México","postalCode":"08200","addressCountry":"MX"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"14:00"}],"sameAs":["https://www.facebook.com/KnockoutBoxingClub23","https://www.instagram.com/k.o.boxing.club/"]}
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Knock Out Boxing Club","description":"Clases de box en Ciudad de México. Enfrente del Metro Viaducto Línea 2. Programas para niños, mujeres y adultos siguiendo los estándares del WBC.","telephone":"+5215563580441","email":"knockoutboxingclub01@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Calzada de Tlalpan 450, Primer Piso","addressLocality":"Iztacalco","addressRegion":"Ciudad de México","postalCode":"08200","addressCountry":"MX"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"14:00"}],"sameAs":["https://www.facebook.com/KnockoutBoxingClub23","https://www.instagram.com/k.o.boxing.club/"]}
 </script>
 <style>
 :root{--rojo:#C8202A;--oro:#C8A030;--negro:#111;--gt:#f7f7f5;--borde:#e0e0dc;--tc:#111;--tm:#666;--azul:#0057A8}
@@ -21,43 +21,69 @@ html{scroll-behavior:smooth}
 body{font-family:'Helvetica Neue',Arial,sans-serif;background:#fff;color:var(--tc);overflow-x:hidden}
 nav{background:#fff;border-bottom:1px solid var(--borde);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:64px;position:sticky;top:0;z-index:100}
 .nl{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nl-ic{width:44px;height:44px;background:var(--rojo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
+.nl-ic{width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0}
+.nl-ic img{width:100%;height:100%;object-fit:cover;display:block}
 .nl-t{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--negro);line-height:1.3}
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{color:var(--tm);text-decoration:none;font-size:12px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--rojo)}
 .nav-cta{background:#25D366;color:white;padding:10px 20px;border-radius:4px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none}
 .nav-cta:hover{background:#1da855}
-.hero{background:var(--gt);border-bottom:1px solid var(--borde);padding:88px 5% 80px;display:flex;align-items:center;gap:60px;min-height:86vh}
-.hero-left{flex:1;max-width:580px}
+
+/* HERO */
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('images/hero-sparring-ring.jpg');background-size:cover;background-position:center;filter:brightness(.35)}
+.hero-inner{position:relative;z-index:2;padding:88px 5% 80px;width:100%;max-width:1100px;margin:0 auto}
 .eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--rojo);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .eyebrow::before{content:'';width:28px;height:2px;background:var(--rojo)}
-.hero-t{font-size:clamp(44px,6vw,72px);font-weight:900;line-height:.92;letter-spacing:-2px;text-transform:uppercase;margin-bottom:20px;color:var(--negro)}
+.hero-t{font-size:clamp(48px,8vw,88px);font-weight:900;line-height:.88;letter-spacing:-3px;text-transform:uppercase;margin-bottom:20px;color:#fff}
 .hero-t .r{color:var(--rojo);display:block}
-.hero-s{font-size:15px;color:var(--tm);line-height:1.8;margin-bottom:32px;max-width:480px}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn-wa{background:#25D366;color:white;padding:14px 28px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:2px solid #25D366}
+.hero-s{font-size:16px;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:36px;max-width:520px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-wa{background:#25D366;color:white;padding:15px 30px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:2px solid #25D366}
 .btn-wa:hover{background:#1da855}
-.btn-ghost{background:transparent;color:var(--negro);padding:14px 28px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:2px solid var(--borde)}
-.btn-ghost:hover{border-color:var(--negro)}
-.btn-red{background:var(--rojo);color:white;padding:14px 28px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none}
-.hero-right{flex:0 0 320px;display:flex;flex-direction:column;gap:10px}
-.card-metro{background:#fff;border:1px solid var(--borde);border-left:3px solid var(--azul);border-radius:6px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.card-metro img{width:48px;height:48px;object-fit:contain;border-radius:6px;flex-shrink:0}
-.metro-nombre{font-size:17px;font-weight:900;color:var(--negro);line-height:1}
-.metro-sub{font-size:11px;font-weight:600;color:var(--tm);letter-spacing:.5px;margin-top:3px;text-transform:uppercase}
-.metro-linea{display:inline-flex;align-items:center;gap:5px;margin-top:7px;background:#EEF4FF;border:1px solid #bcd0f0;border-radius:100px;padding:3px 9px}
-.ml-dot{width:14px;height:14px;background:var(--azul);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;color:#fff}
-.ml-txt{font-size:11px;font-weight:700;color:#003a8c}
-.card-stat{background:#fff;border:1px solid var(--borde);border-left:3px solid var(--rojo);border-radius:6px;padding:16px 18px}
-.cs-n{font-size:32px;font-weight:900;color:var(--negro);line-height:1}
-.cs-l{font-size:10px;color:var(--tm);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
-.card-wbc{background:#fff;border:1px solid var(--borde);border-left:3px solid var(--oro);border-radius:6px;padding:16px 18px;display:flex;align-items:center;gap:12px}
-.wbc-t{font-size:18px;font-weight:900;color:var(--negro);line-height:1}
-.wbc-s{font-size:11px;color:var(--tm);text-transform:uppercase;letter-spacing:1px;margin-top:3px}
+.btn-ghost-w{background:transparent;color:#fff;padding:15px 30px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:2px solid rgba(255,255,255,.4)}
+.btn-ghost-w:hover{border-color:#fff}
+.hero-badges{display:flex;gap:16px;margin-top:40px;flex-wrap:wrap}
+.hb{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:12px 18px;display:flex;align-items:center;gap:10px}
+.hb-n{font-size:22px;font-weight:900;color:#fff;line-height:1}
+.hb-l{font-size:10px;color:rgba(255,255,255,.55);letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+.hb-metro{background:rgba(0,87,168,.25);border-color:rgba(0,87,168,.5)}
+.hb-metro .hb-n{color:#7eb8ff}
+
+/* STRIP */
 .strip{background:var(--negro);padding:14px 5%;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap}
 .si{display:flex;align-items:center;gap:7px}
 .si-t{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff}
+
+/* LOCATION SECTION */
+.loc-sec{background:#fff;padding:80px 5%;border-bottom:1px solid var(--borde)}
+.loc-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.sl{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--rojo);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sl::before{content:'';width:20px;height:2px;background:var(--rojo)}
+.st{font-size:clamp(28px,4vw,48px);font-weight:900;text-transform:uppercase;line-height:.97;letter-spacing:-1px;margin-bottom:14px;color:var(--negro)}
+.sb{font-size:15px;line-height:1.8;color:var(--tm)}
+.dv{width:40px;height:3px;background:var(--rojo);margin:14px 0}
+.loc-feats{display:flex;flex-direction:column;gap:10px;margin:20px 0 24px}
+.lf{display:flex;align-items:flex-start;gap:14px;padding:14px 16px;background:var(--gt);border:1px solid var(--borde);border-radius:4px}
+.lf-ic{font-size:22px;flex-shrink:0;margin-top:2px}
+.lf-t{font-size:14px;font-weight:700;color:var(--negro)}
+.lf-s{font-size:12px;color:var(--tm);margin-top:2px;line-height:1.5}
+.loc-map{border-radius:6px;overflow:hidden;border:1px solid var(--borde)}
+.loc-map iframe{width:100%;height:340px;border:none;display:block}
+.metro-pill{display:inline-flex;align-items:center;gap:10px;background:#EEF4FF;border:1px solid #bcd0f0;border-radius:6px;padding:12px 16px;margin-bottom:20px}
+.mp-dot{width:22px;height:22px;background:var(--azul);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;flex-shrink:0}
+.mp-t{font-size:14px;font-weight:700;color:#003a8c}
+.mp-s{font-size:11px;color:#4a6fa5;margin-top:1px}
+
+/* STATS ROW */
+.stats-row{background:var(--rojo);padding:48px 5%}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat-item{padding:20px}
+.stat-n{font-size:clamp(36px,5vw,56px);font-weight:900;color:#fff;line-height:1}
+.stat-l{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:8px}
+
+/* INSTALACIONES */
 .inmueble-sec{background:var(--negro);padding:90px 5%;position:relative;overflow:hidden}
 .inmueble-sec::before{content:'450';position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-size:280px;font-weight:900;color:rgba(200,32,42,0.05);line-height:1;pointer-events:none}
 .im-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -73,7 +99,6 @@ nav{background:#fff;border-bottom:1px solid var(--borde);display:flex;align-item
 .ia-t{font-size:14px;font-weight:700;color:#fff}
 .ia-s{font-size:13px;color:rgba(255,255,255,.45);margin-top:4px;line-height:1.7}
 .metro-b{display:inline-flex;align-items:center;gap:10px;background:rgba(0,87,168,.18);border:1px solid rgba(0,87,168,.4);border-radius:4px;padding:10px 16px;margin-top:14px}
-.metro-b img{width:26px;height:26px;object-fit:contain;border-radius:3px;flex-shrink:0}
 .mb-t{font-size:13px;font-weight:700;color:#fff}
 .mb-s{font-size:11px;color:rgba(255,255,255,.45);margin-top:1px}
 .im-vis{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:36px;text-align:center}
@@ -84,39 +109,26 @@ nav{background:#fff;border-bottom:1px solid var(--borde);display:flex;align-item
 .iv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px}
 .iv-n{font-size:22px;font-weight:900;color:#fff;line-height:1}
 .iv-l{font-size:10px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+/* TRAINING PHOTOS */
 .sec{padding:88px 5%}
-.sl{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--rojo);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.sl::before{content:'';width:20px;height:2px;background:var(--rojo)}
-.st{font-size:clamp(28px,4vw,48px);font-weight:900;text-transform:uppercase;line-height:.97;letter-spacing:-1px;margin-bottom:14px;color:var(--negro)}
-.sb{font-size:15px;line-height:1.8;color:var(--tm)}
-.dv{width:40px;height:3px;background:var(--rojo);margin:14px 0}
-.paola-sec{background:#fff;border-bottom:1px solid var(--borde)}
-.paola-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:420px 1fr;gap:64px;align-items:center}
-.paola-foto-wrap{position:relative}
-.paola-foto{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:6px;display:block}
-.paola-badge{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(17,17,17,.9);border-radius:4px;padding:14px 16px;border-left:3px solid var(--rojo)}
-.pb-nombre{font-size:15px;font-weight:700;color:#fff;line-height:1.2}
-.pb-cargo{font-size:11px;color:var(--rojo);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:4px}
-.paola-logros{margin-top:24px;display:flex;flex-direction:column;gap:10px}
-.logro{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--gt);border:1px solid var(--borde);border-radius:4px}
-.logro-i{font-size:20px;flex-shrink:0}
-.logro-t{font-size:14px;font-weight:600;color:var(--negro)}
-.logro-s{font-size:12px;color:var(--tm);margin-top:2px}
-.training-sec{background:var(--gt);border-top:1px solid var(--borde)}
-.training-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
+.training-sec{background:var(--gt);border-top:1px solid var(--borde);padding:80px 5%}
+.training-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:24px auto 0}
 .tcard{border-radius:6px;overflow:hidden;border:1px solid var(--borde);position:relative}
-.tcard img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;display:block;transition:transform .4s}
+.tcard img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;transition:transform .4s}
 .tcard:hover img{transform:scale(1.04)}
-.tcard-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.78),transparent);padding:24px 16px 16px}
+.tcard-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.82),transparent);padding:28px 16px 18px}
 .tcard-tag{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.75)}
-.tcard-t{font-size:15px;font-weight:700;color:#fff;margin-top:4px}
-.prog-sec{background:#fff;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.tcard-t{font-size:16px;font-weight:700;color:#fff;margin-top:4px}
+
+/* PROGRAMS */
+.prog-sec{background:#fff;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);padding:80px 5%}
 .prog-h{text-align:center;margin-bottom:48px}
 .prog-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto}
 .pc{background:var(--gt);border:1px solid var(--borde);border-radius:6px;overflow:hidden;transition:box-shadow .2s}
 .pc:hover{box-shadow:0 8px 28px rgba(0,0,0,.08)}
-.pc-img{height:210px;overflow:hidden}
-.pc-img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .4s}
+.pc-img{height:220px;overflow:hidden}
+.pc-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .4s}
 .pc:hover .pc-img img{transform:scale(1.04)}
 .pc-body{padding:22px}
 .pc-tag{display:inline-block;background:var(--rojo);color:white;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:10px}
@@ -125,7 +137,9 @@ nav{background:#fff;border-bottom:1px solid var(--borde);display:flex;align-item
 .pc-feats{margin-top:12px;display:flex;flex-direction:column;gap:5px}
 .pf{font-size:12px;color:var(--tm);display:flex;align-items:center;gap:6px}
 .pf::before{content:'';width:5px;height:5px;background:var(--rojo);border-radius:50%;flex-shrink:0}
-.gal-sec{background:var(--gt);border-top:1px solid var(--borde)}
+
+/* GALLERY */
+.gal-sec{background:var(--gt);border-top:1px solid var(--borde);padding:80px 5%}
 .gal-header{text-align:center;margin-bottom:36px}
 .gal-g{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:1100px;margin:0 auto}
 .gi{overflow:hidden;border-radius:3px;border:1px solid var(--borde)}
@@ -133,44 +147,62 @@ nav{background:#fff;border-bottom:1px solid var(--borde);display:flex;align-item
 .gi:hover img{transform:scale(1.06)}
 .gi.wide{grid-column:span 2}
 .gi.wide img{aspect-ratio:2}
-.maps-sec{background:#fff;border-top:1px solid var(--borde)}
-.maps-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;max-width:1100px;margin:0 auto}
+
+/* WHY ZONE */
+.why-sec{background:#fff;border-top:1px solid var(--borde);padding:80px 5%}
+.why-inner{max-width:1100px;margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.wc{background:var(--gt);border:1px solid var(--borde);border-radius:6px;padding:28px;position:relative}
+.wc-icon{font-size:32px;margin-bottom:12px}
+.wc-t{font-size:16px;font-weight:700;color:var(--negro);margin-bottom:8px}
+.wc-s{font-size:13px;color:var(--tm);line-height:1.6}
+.wc-badge{position:absolute;top:16px;right:16px;background:var(--rojo);color:#fff;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border-radius:3px}
+
+/* CONTACT */
+.maps-sec{background:var(--gt);border-top:1px solid var(--borde);padding:80px 5%}
+.maps-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;max-width:1100px;margin:24px auto 0}
 .map-wrap{border-radius:6px;overflow:hidden;border:1px solid var(--borde)}
-.map-wrap iframe{width:100%;height:380px;border:none;display:block}
-.metro-big{display:flex;align-items:center;gap:12px;background:#EEF4FF;border:1px solid #bcd0f0;border-radius:6px;padding:13px 16px;margin-bottom:24px}
-.metro-big img{width:42px;height:42px;object-fit:contain;border-radius:5px;flex-shrink:0}
+.map-wrap iframe{width:100%;height:400px;border:none;display:block}
+.metro-big{display:flex;align-items:center;gap:12px;background:#EEF4FF;border:1px solid #bcd0f0;border-radius:6px;padding:13px 16px;margin-bottom:20px;max-width:1100px;margin-left:auto;margin-right:auto}
+.metro-big .mp-dot{width:36px;height:36px;font-size:16px;flex-shrink:0}
 .mbt{font-size:14px;font-weight:700;color:#003a8c}
 .mbs{font-size:12px;color:#4a6fa5;margin-top:2px}
 .map-info{display:flex;flex-direction:column;gap:10px}
-.mi-card{background:var(--gt);border:1px solid var(--borde);border-radius:6px;padding:20px}
+.mi-card{background:#fff;border:1px solid var(--borde);border-radius:6px;padding:20px}
 .mi-title{font-size:13px;font-weight:700;color:var(--negro);margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px}
 .mi-row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--borde)}
 .mi-row:last-child{border-bottom:none;padding-bottom:0}
-.mi-ic{width:32px;height:32px;background:#fff;border:1px solid var(--borde);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.mi-ic{width:32px;height:32px;background:var(--gt);border:1px solid var(--borde);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
 .mi-l{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
 .mi-v{font-size:13px;color:var(--tc);line-height:1.6}
 .mi-v a{color:var(--rojo);text-decoration:none;font-weight:700}
 .cta-wa{display:flex;align-items:center;gap:14px;background:#25D366;color:white;padding:16px 18px;border-radius:6px;text-decoration:none}
 .cta-wa:hover{background:#1da855}
-.cta-mail{display:flex;align-items:center;gap:14px;background:var(--gt);color:var(--negro);padding:16px 18px;border-radius:6px;text-decoration:none;border:1.5px solid var(--borde)}
+.cta-mail{display:flex;align-items:center;gap:14px;background:#fff;color:var(--negro);padding:16px 18px;border-radius:6px;text-decoration:none;border:1.5px solid var(--borde)}
 .cta-mail:hover{border-color:var(--negro)}
 .cta-t{font-size:14px;font-weight:700}
 .cta-s{font-size:11px;opacity:.85;margin-top:2px}
 .cta-mail .cta-t{color:var(--negro)}
 .cta-mail .cta-s{color:var(--tm);opacity:1}
+
+/* FOOTER */
 footer{background:var(--negro);padding:36px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
 .fl{display:flex;align-items:center;gap:12px}
-.fl-ic{width:40px;height:40px;background:var(--rojo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+.fl-ic{width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0}
+.fl-ic img{width:100%;height:100%;object-fit:cover;display:block}
 .fl-t{font-size:14px;font-weight:700;color:#fff}
 .fl-s{font-size:11px;color:rgba(255,255,255,.35);margin-top:2px}
 .ft{font-size:11px;color:rgba(200,32,42,.8);letter-spacing:3px;text-transform:uppercase;font-weight:700}
 .fc{font-size:12px;color:rgba(255,255,255,.35)}
+
 @media(max-width:768px){
 .nav-links{display:none}
-.hero{flex-direction:column;gap:40px;padding:72px 5% 56px;min-height:auto}
-.hero-right{flex:unset;width:100%}
-.paola-inner,.im-inner,.maps-grid{grid-template-columns:1fr;gap:40px}
-.prog-g,.training-grid{grid-template-columns:1fr}
+.hero{min-height:auto}
+.hero-inner{padding:80px 5% 60px}
+.hero-badges{gap:10px}
+.loc-inner,.im-inner,.maps-grid{grid-template-columns:1fr;gap:40px}
+.prog-g,.training-grid,.why-grid,.stats-inner{grid-template-columns:1fr}
+.stats-inner{grid-template-columns:1fr 1fr}
 .gal-g{grid-template-columns:1fr 1fr}
 .gi.wide{grid-column:span 1}.gi.wide img{aspect-ratio:1}
 .inmueble-sec::before{display:none}
@@ -182,49 +214,38 @@ footer{flex-direction:column;text-align:center}
 
 <nav>
   <a href="#inicio" class="nl">
-    <div class="nl-ic">🥊</div>
+    <div class="nl-ic"><img src="images/logo-knockout-boxing-club.jpg" alt="Knock Out Boxing Club Logo"></div>
     <div class="nl-t">Knock Out<br>Boxing Club</div>
   </a>
   <ul class="nav-links">
-    <li><a href="#nosotros">El Gym</a></li>
-    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a href="#instalaciones">El Gym</a></li>
     <li><a href="#programas">Programas</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
   <a href="https://wa.me/5215563580441" target="_blank" class="nav-cta">WhatsApp</a>
 </nav>
 
+<!-- HERO con fondo de imagen -->
 <section id="inicio" class="hero">
-  <div class="hero-left">
-    <p class="eyebrow">Escuela de Box en Ciudad de México · Iztacalco</p>
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Calzada de Tlalpan 450 · Iztacalco · Ciudad de México</p>
     <h1 class="hero-t">Knock Out<span class="r">Boxing Club</span></h1>
-    <p class="hero-s">Más de 500 alumnos activos. Clases de box para todas las edades y niveles. Programa infantil, femenil y competitivo. Entrenamiento siguiendo los estándares del WBC. Primera clase gratis.</p>
+    <p class="hero-s">Escuela de box en el corazón de la CDMX, a metros del Metro Viaducto Línea 2. Clases para todas las edades y niveles. Clase Muestra Gratis.</p>
     <div class="btns">
-      <a href="https://wa.me/5215563580441" target="_blank" class="btn-wa">💬 Escribir por WhatsApp</a>
-      <a href="#programas" class="btn-ghost">Ver Programas</a>
+      <a href="https://wa.me/5215563580441" target="_blank" class="btn-wa">💬 Clase Muestra Gratis</a>
+      <a href="#programas" class="btn-ghost-w">Ver Programas</a>
     </div>
-  </div>
-  <div class="hero-right">
-    <div class="card-metro">
-      <img src="images/metro-viaducto.png" alt="Metro Viaducto Línea 2">
-      <div>
-        <div class="metro-nombre">Metro Viaducto</div>
-        <div class="metro-sub">Enfrente · acceso directo</div>
-        <div class="metro-linea">
-          <div class="ml-dot">2</div>
-          <span class="ml-txt">Línea 2</span>
-        </div>
+    <div class="hero-badges">
+      <div class="hb hb-metro">
+        <div><div class="hb-n">🚇 L2</div><div class="hb-l">Metro Viaducto · enfrente</div></div>
       </div>
-    </div>
-    <div class="card-stat">
-      <div class="cs-n">+500</div>
-      <div class="cs-l">Alumnos activos hoy</div>
-    </div>
-    <div class="card-wbc">
-      <span style="font-size:28px">🏆</span>
-      <div>
-        <div class="wbc-t">WBC</div>
-        <div class="wbc-s">Consejo Mundial de Boxeo</div>
+      <div class="hb">
+        <div><div class="hb-n">+500</div><div class="hb-l">Alumnos</div></div>
+      </div>
+      <div class="hb">
+        <div><div class="hb-n">WBC</div><div class="hb-l">Estándares oficiales</div></div>
       </div>
     </div>
   </div>
@@ -236,119 +257,258 @@ footer{flex-direction:column;text-align:center}
   <div class="si"><span>👩</span><span class="si-t">Box Femenil</span></div>
   <div class="si"><span>🏆</span><span class="si-t">Estándares WBC</span></div>
   <div class="si"><span>🚇</span><span class="si-t">Metro Viaducto L2</span></div>
+  <div class="si"><span>✅</span><span class="si-t">Clase Muestra Gratis</span></div>
 </div>
 
+<!-- STATS ROW -->
+<div class="stats-row">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-n">+500</div>
+      <div class="stat-l">Alumnos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">🥊</div>
+      <div class="stat-l">Programas para todas las edades</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">L2</div>
+      <div class="stat-l">Metro Viaducto · enfrente</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">WBC</div>
+      <div class="stat-l">Estándares de entrenamiento</div>
+    </div>
+  </div>
+</div>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion" class="loc-sec">
+  <div class="loc-inner">
+    <div>
+      <p class="sl">Por qué esta ubicación</p>
+      <h2 class="st">Una excelente<br><span style="color:var(--rojo)">ubicación</span></h2>
+      <div class="dv"></div>
+      <p class="sb">Calzada de Tlalpan 450 es una de las vialidades más importantes de la Ciudad de México. A metros del Metro Viaducto Línea 2, conecta Iztacalco con el centro y distintos puntos clave de la CDMX en minutos.</p>
+      <div class="loc-feats">
+        <div class="lf">
+          <span class="lf-ic">🚇</span>
+          <div>
+            <div class="lf-t">Metro Viaducto · Línea 2 · a metros</div>
+            <div class="lf-s">A menos de 20 metros de la estación. Conexión desde Taxqueña, Centro, Buenavista y toda la L2.</div>
+          </div>
+        </div>
+        <div class="lf">
+          <span class="lf-ic">🚌</span>
+          <div>
+            <div class="lf-t">Metrobús y múltiples rutas</div>
+            <div class="lf-s">Calzada de Tlalpan es corredor de Metrobús y decenas de rutas de microbús y RTP.</div>
+          </div>
+        </div>
+        <div class="lf">
+          <span class="lf-ic">🚗</span>
+          <div>
+            <div class="lf-t">Fácil acceso en auto</div>
+            <div class="lf-s">Vialidad principal norte-sur. Estacionamientos disponibles en la zona.</div>
+          </div>
+        </div>
+        <div class="lf">
+          <span class="lf-ic">📍</span>
+          <div>
+            <div class="lf-t">Zona Viaducto Piedad · Iztacalco</div>
+            <div class="lf-s">Colonia consolidada, activa y bien comunicada con el resto de la CDMX.</div>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/5215563580441" target="_blank" class="btn-wa" style="display:inline-flex;align-items:center;gap:8px">💬 Solicitar Clase Muestra</a>
+    </div>
+    <div>
+      <div class="metro-pill">
+        <div class="mp-dot">2</div>
+        <div>
+          <div class="mp-t">Metro Viaducto · Línea 2</div>
+          <div class="mp-s">A metros del gimnasio · Col. Viaducto Piedad</div>
+        </div>
+      </div>
+      <div class="loc-map">
+        <iframe src="https://maps.google.com/maps?q=Calzada+de+Tlalpan+450,+Viaducto+Piedad,+Iztacalco,+Ciudad+de+Mexico&output=embed&z=16" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Knock Out Boxing Club · Calzada de Tlalpan 450"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALACIONES -->
 <section id="instalaciones" class="inmueble-sec">
   <div class="im-inner">
     <div>
       <div class="im-lbl">Nuestras instalaciones</div>
       <h2 class="im-title">Calzada de<br>Tlalpan<span> 450</span></h2>
-      <p class="im-body">Un espacio de primer nivel diseñado para el alto rendimiento. Equipo completo, instalaciones profesionales y la mejor ubicación: enfrente del Metro Viaducto.</p>
+      <p class="im-body">Espacio de primer nivel diseñado para el alto rendimiento. Instalaciones profesionales, equipo completo y la mejor ubicación de la zona.</p>
       <div class="im-feats">
         <div class="if-i"><div class="if-d"></div>Equipo completo de entrenamiento</div>
-        <div class="if-i"><div class="if-d"></div>Vestidores y área de calentamiento</div>
         <div class="if-i"><div class="if-d"></div>Instalaciones para eventos y combates</div>
         <div class="if-i"><div class="if-d"></div>Primer piso · Amplio y bien iluminado</div>
+        <div class="if-i"><div class="if-d"></div>Zona segura · acceso controlado</div>
       </div>
       <div class="im-addr">
         <div class="ia-t">Calzada de Tlalpan 450, Primer Piso</div>
         <div class="ia-s">Col. Viaducto Piedad · Iztacalco · CDMX · C.P. 08200</div>
         <div class="metro-b">
-          <img src="images/metro-viaducto.png" alt="Metro Viaducto">
           <div><div class="mb-t">Enfrente del Metro Viaducto</div><div class="mb-s">Línea 2 · A pasos de la estación</div></div>
         </div>
       </div>
     </div>
-    <div class="im-vis">
-      <div class="iv-num">450</div>
-      <div class="iv-street">Calzada de Tlalpan</div>
-      <div class="iv-col">Col. Viaducto Piedad · Iztacalco<br>Ciudad de México · C.P. 08200</div>
-      <div class="iv-grid">
+    <div class="im-vis" style="padding:0;overflow:hidden;background:transparent;border:none">
+      <img src="images/welcome-knockout-boxing-club.png" alt="Welcome to Knock Out Boxing Club" style="width:100%;display:block;border-radius:6px">
+      <div class="iv-grid" style="padding:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-top:none;border-radius:0 0 6px 6px">
         <div class="iv-card"><div class="iv-n">Piso 1</div><div class="iv-l">Nivel del Gym</div></div>
         <div class="iv-card"><div class="iv-n">WBC</div><div class="iv-l">Estándares oficiales</div></div>
         <div class="iv-card"><div class="iv-n">L2</div><div class="iv-l">Metro Viaducto</div></div>
-        <div class="iv-card"><div class="iv-n">+500</div><div class="iv-l">Alumnos activos</div></div>
+        <div class="iv-card"><div class="iv-n">+500</div><div class="iv-l">Alumnos</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="equipo" class="sec paola-sec">
-  <div style="max-width:720px;margin:0 auto;text-align:center">
-    <p class="sl" style="justify-content:center">Quiénes somos</p>
-    <h2 class="st" style="text-align:center">Nuestro<br><span style="color:var(--rojo)">Equipo</span></h2>
-    <div class="dv" style="margin:14px auto"></div>
-    <p class="sb">El Knock Out Boxing Club está dirigido por un gran equipo de entrenadores con experiencia competitiva, formados bajo los estándares técnicos y éticos del Consejo Mundial de Boxeo (WBC). Juntos han transformado la vida de más de 500 alumnos — desde niños hasta competidores de élite.</p>
-    <p class="sb" style="margin-top:14px">Nuestra metodología combina la disciplina del box olímpico con un enfoque humano que prioriza el desarrollo integral de cada alumno, sin importar su edad o nivel.</p>
-    <div class="paola-logros" style="max-width:520px;margin:24px auto 0">
-      <div class="logro"><span class="logro-i">🏆</span><div><div class="logro-t">Vinculados al WBC</div><div class="logro-s">Entrenamiento siguiendo los estándares del Consejo Mundial de Boxeo</div></div></div>
-      <div class="logro"><span class="logro-i">🥊</span><div><div class="logro-t">Entrenadores certificados</div><div class="logro-s">Formación técnica en box olímpico y combate</div></div></div>
-      <div class="logro"><span class="logro-i">👥</span><div><div class="logro-t">+500 alumnos formados</div><div class="logro-s">Juveniles, mujeres y competidores profesionales</div></div></div>
-    </div>
-    <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
-      <a href="https://wa.me/5215563580441" target="_blank" class="btn-wa" style="font-size:12px;padding:11px 22px">💬 Escríbenos por WhatsApp</a>
-      <a href="https://www.instagram.com/k.o.boxing.club/" target="_blank" class="btn-ghost" style="font-size:12px;padding:11px 22px">Instagram del Gym</a>
-    </div>
-  </div>
-</section>
-
-<section class="sec training-sec">
-  <p class="sl">Entrenamiento</p>
-  <h2 class="st">El Gym en Acción</h2>
-  <div class="dv"></div>
+<!-- FOTOS DEL GYM EN ACCIÓN -->
+<section class="training-sec">
+  <p class="sl" style="max-width:1100px;margin:0 auto">Entrenamiento</p>
+  <h2 class="st" style="max-width:1100px;margin:8px auto 4px">El Gym en Acción</h2>
   <div class="training-grid">
-    <div class="tcard"><img src="images/paola-campeon-trainer.png" alt="Entrenador con campeón WBC"><div class="tcard-label"><div class="tcard-tag">Equipo</div><div class="tcard-t">Nuestros entrenadores con campeón WBC</div></div></div>
-    <div class="tcard"><img src="images/chicas-box.png" alt="Box femenil CDMX"><div class="tcard-label"><div class="tcard-tag">Femenil</div><div class="tcard-t">Sección de mujeres</div></div></div>
-    <div class="tcard"><img src="images/combate-oficial.png" alt="Combate oficial"><div class="tcard-label"><div class="tcard-tag">Competitivo</div><div class="tcard-t">Combate oficial</div></div></div>
+    <div class="tcard">
+      <img src="images/box-femenil.jpg" alt="Box femenil entrenamiento CDMX" loading="lazy">
+      <div class="tcard-label"><div class="tcard-tag">Femenil</div><div class="tcard-t">Box para mujeres</div></div>
+    </div>
+    <div class="tcard">
+      <img src="images/entrenamiento-ring.jpg" alt="Entrenamiento de box Ciudad de México" loading="lazy">
+      <div class="tcard-label"><div class="tcard-tag">Competitivo</div><div class="tcard-t">Preparación y combate</div></div>
+    </div>
+    <div class="tcard">
+      <img src="images/bag-training.jpg" alt="Clases de box CDMX" loading="lazy">
+      <div class="tcard-label"><div class="tcard-tag">Técnica</div><div class="tcard-t">Formación y disciplina</div></div>
+    </div>
   </div>
 </section>
 
-<section id="programas" class="sec prog-sec">
+<!-- PROGRAMAS -->
+<section id="programas" class="prog-sec">
   <div class="prog-h">
     <p class="sl" style="justify-content:center">Entrenamiento</p>
     <h2 class="st" style="text-align:center">Nuestros Programas</h2>
-    <p class="sb" style="text-align:center;margin:0 auto;max-width:480px">Clases de box en CDMX para todas las edades, siguiendo los estándares del WBC.</p>
+    <p class="sb" style="text-align:center;margin:0 auto;max-width:480px">Clases de box en CDMX para todas las edades, siguiendo los estándares del WBC. Clase Muestra Gratis para nuevos alumnos.</p>
   </div>
   <div class="prog-g">
     <div class="pc">
-      <div class="pc-img"><img src="images/chicas-box.png" alt="Box femenil Ciudad de México"></div>
-      <div class="pc-body"><span class="pc-tag">Femenil</span><div class="pc-t">Box para Mujeres</div><div class="pc-d">Técnica, acondicionamiento y competencia en un espacio seguro diseñado para mujeres.</div><div class="pc-feats"><div class="pf">A partir de 15 años</div><div class="pf">Instructoras especializadas</div><div class="pf">Competencias regionales</div></div></div>
+      <div class="pc-img"><img src="images/box-femenil.jpg" alt="Box femenil Ciudad de México" loading="lazy"></div>
+      <div class="pc-body">
+        <span class="pc-tag">Femenil</span>
+        <div class="pc-t">Box para Mujeres</div>
+        <div class="pc-d">Técnica, acondicionamiento físico y competencia en un espacio seguro y profesional.</div>
+        <div class="pc-feats">
+          <div class="pf">A partir de 15 años</div>
+          <div class="pf">Entrenamiento especializado</div>
+          <div class="pf">Competencias regionales</div>
+        </div>
+      </div>
     </div>
     <div class="pc">
-      <div class="pc-img"><img src="images/juvenil-medallas.png" alt="Escuela de box para niños CDMX"></div>
-      <div class="pc-body"><span class="pc-tag">Juvenil</span><div class="pc-t">Programa Infantil y Juvenil</div><div class="pc-d">Desde los 6 años. Disciplina, valores y box de alto rendimiento para los campeones del futuro.</div><div class="pc-feats"><div class="pf">Desde 6 años de edad</div><div class="pf">Torneos juveniles</div><div class="pf">Entrenadores certificados</div></div></div>
+      <div class="pc-img"><img src="images/juvenil-ring.jpg" alt="Escuela de box para niños CDMX" loading="lazy"></div>
+      <div class="pc-body">
+        <span class="pc-tag">Juvenil</span>
+        <div class="pc-t">Programa Infantil y Juvenil</div>
+        <div class="pc-d">Desde los 6 años. Disciplina, valores y box de alto rendimiento para los campeones del futuro.</div>
+        <div class="pc-feats">
+          <div class="pf">Desde 6 años de edad</div>
+          <div class="pf">Torneos juveniles</div>
+          <div class="pf">Entrenadores certificados</div>
+        </div>
+      </div>
     </div>
     <div class="pc">
-      <div class="pc-img"><img src="images/combate-femenil.png" alt="Box olímpico CDMX estándares WBC"></div>
-      <div class="pc-body"><span class="pc-tag">Competitivo</span><div class="pc-t">Box Olímpico y Combate</div><div class="pc-d">Preparación para eventos nacionales. Sparring y combate siguiendo los estándares del WBC.</div><div class="pc-feats"><div class="pf">Box olímpico certificado</div><div class="pf">Sparring y combate</div><div class="pf">Estándares WBC</div></div></div>
+      <div class="pc-img"><img src="images/entrenamiento-ring.jpg" alt="Box olímpico CDMX estándares WBC" loading="lazy"></div>
+      <div class="pc-body">
+        <span class="pc-tag">Competitivo</span>
+        <div class="pc-t">Box Olímpico y Combate</div>
+        <div class="pc-d">Preparación para eventos nacionales. Sparring y combate siguiendo los estándares del WBC.</div>
+        <div class="pc-feats">
+          <div class="pf">Box olímpico certificado</div>
+          <div class="pf">Sparring y combate</div>
+          <div class="pf">Estándares WBC</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec gal-sec">
+<!-- POR QUÉ ELEGIRNOS / ZONA -->
+<section class="why-sec">
+  <div class="why-inner">
+    <p class="sl">Ventajas</p>
+    <h2 class="st">¿Por qué<br><span style="color:var(--rojo)">entrenar aquí?</span></h2>
+    <div class="dv"></div>
+    <p class="sb" style="max-width:600px">Más de 500 alumnos han encontrado en Knock Out Boxing Club el lugar ideal para entrenar en la CDMX. La ubicación, la calidad y el ambiente hacen la diferencia.</p>
+    <div class="why-grid">
+      <div class="wc">
+        <div class="wc-badge">Top</div>
+        <div class="wc-icon">🚇</div>
+        <div class="wc-t">Ubicación imbatible</div>
+        <div class="wc-s">Enfrente del Metro Viaducto Línea 2. Sin pretextos para faltar. Llegas en transporte o en auto sin problema.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon">🏆</div>
+        <div class="wc-t">Estándares WBC</div>
+        <div class="wc-s">Entrenamiento alineado con el Consejo Mundial de Boxeo. Técnica correcta desde el primer día.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon">👦👩</div>
+        <div class="wc-t">Todas las edades</div>
+        <div class="wc-s">Programas para niños desde 6 años, mujeres y adultos competitivos. Un lugar para toda la familia.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon">✅</div>
+        <div class="wc-t">Clase Muestra Gratis</div>
+        <div class="wc-s">Ven a conocer las instalaciones y prueba una clase muestra sin compromiso. Solo manda un WhatsApp.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon">📍</div>
+        <div class="wc-t">Zona Viaducto Piedad</div>
+        <div class="wc-s">Iztacalco, una de las alcaldías mejor conectadas de la CDMX. A minutos del centro y Sur de la ciudad.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon">👥</div>
+        <div class="wc-t">Comunidad activa</div>
+        <div class="wc-s">Más de 500 alumnos que ya transformaron su vida con el box. Ambiente positivo, motivador y seguro.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="gal-sec">
   <div class="gal-header">
     <p class="sl" style="justify-content:center">Momentos</p>
     <h2 class="st" style="text-align:center">Galería</h2>
   </div>
   <div class="gal-g">
-    <div class="gi wide"><img src="images/juvenil-combate-1.png" alt="Combate juvenil Knock Out Boxing Club CDMX" loading="lazy"></div>
-    <div class="gi"><img src="images/paola-campeon.png" alt="Campeón WBC en el gym" loading="lazy"></div>
-    <div class="gi"><img src="images/paola-y-trainer.png" alt="Entrenamiento en el gym" loading="lazy"></div>
-    <div class="gi"><img src="images/juvenil-medallistas.png" alt="Medallistas juveniles box CDMX" loading="lazy"></div>
-    <div class="gi"><img src="images/juvenil-combate-2.png" alt="Combate juvenil" loading="lazy"></div>
-    <div class="gi wide"><img src="images/combate-oficial.png" alt="Combate oficial box Ciudad de México" loading="lazy"></div>
-    <div class="gi"><img src="images/campeon-wbc.png" alt="Campeón WBC Knock Out Boxing Club" loading="lazy"></div>
-    <div class="gi"><img src="images/combate-femenil.png" alt="Box femenil CDMX" loading="lazy"></div>
+    <div class="gi wide"><img src="images/hero-sparring-ring.jpg" alt="Sparring en ring Knock Out Boxing Club CDMX" loading="lazy"></div>
+    <div class="gi"><img src="images/box-femenil.jpg" alt="Box femenil Ciudad de México" loading="lazy"></div>
+    <div class="gi"><img src="images/juvenil-ring.jpg" alt="Boxeo juvenil CDMX" loading="lazy"></div>
+    <div class="gi"><img src="images/bag-training.jpg" alt="Entrenamiento con costal de box" loading="lazy"></div>
+    <div class="gi"><img src="images/entrenamiento-ring.jpg" alt="Boxeador entrenando en ring CDMX" loading="lazy"></div>
+    <div class="gi wide"><img src="images/entrenamiento-nocturno.jpg" alt="Escuela de box Ciudad de México metro Viaducto" loading="lazy"></div>
+    <div class="gi"><img src="images/box-femenil.jpg" alt="Box para mujeres CDMX" loading="lazy"></div>
+    <div class="gi"><img src="images/juvenil-ring.jpg" alt="Clases de box para niños CDMX" loading="lazy"></div>
   </div>
 </section>
 
-<section id="contacto" class="sec maps-sec">
+<!-- CONTACTO -->
+<section id="contacto" class="maps-sec">
   <p class="sl">Cómo llegar</p>
   <h2 class="st">Encuéntranos</h2>
   <div class="dv"></div>
   <div class="metro-big">
-    <img src="images/metro-viaducto.png" alt="Metro Viaducto Línea 2">
-    <div><div class="mbt">Enfrente del Metro Viaducto · Línea 2</div><div class="mbs">Calzada de Tlalpan 450, Primer Piso · Col. Viaducto Piedad · Iztacalco · CDMX</div></div>
+    <div class="mp-dot">2</div>
+    <div><div class="mbt">Enfrente del Metro Viaducto · Línea 2</div><div class="mbs">Calzada de Tlalpan 450, Primer Piso · Col. Viaducto Piedad · Iztacalco · CDMX · C.P. 08200</div></div>
   </div>
   <div class="maps-grid">
     <div class="map-wrap">
@@ -361,19 +521,19 @@ footer{flex-direction:column;text-align:center}
         <div class="mi-row"><div class="mi-ic">🗓</div><div><div class="mi-l">Horarios</div><div class="mi-v">Lun–Vie: 7:00 – 21:00 hrs<br>Sáb: 8:00 – 14:00 hrs</div></div></div>
         <div class="mi-row"><div class="mi-ic">🚇</div><div><div class="mi-l">Metro</div><div class="mi-v">Viaducto · Línea 2 · enfrente</div></div></div>
         <div class="mi-row"><div class="mi-ic">📞</div><div><div class="mi-l">WhatsApp</div><div class="mi-v"><a href="https://wa.me/5215563580441" target="_blank">+52 55 6358 0441</a></div></div></div>
-        <div class="mi-row"><div class="mi-ic">✉️</div><div><div class="mi-l">Correo electrónico</div><div class="mi-v"><a href="mailto:knockoutboxingclub01@gmail.com">knockoutboxingclub01@gmail.com</a></div></div></div>
+        <div class="mi-row"><div class="mi-ic">✉️</div><div><div class="mi-l">Correo</div><div class="mi-v"><a href="mailto:knockoutboxingclub01@gmail.com">knockoutboxingclub01@gmail.com</a></div></div></div>
       </div>
       <a href="https://wa.me/5215563580441" target="_blank" class="cta-wa">
         <span style="font-size:24px">💬</span>
-        <div><div class="cta-t">Escribir por WhatsApp</div><div class="cta-s">+52 55 6358 0441</div></div>
+        <div><div class="cta-t">Escribir por WhatsApp</div><div class="cta-s">Clase Muestra Gratis · +52 55 6358 0441</div></div>
       </a>
       <a href="mailto:knockoutboxingclub01@gmail.com" class="cta-mail">
         <span style="font-size:24px">✉️</span>
         <div><div class="cta-t">Enviar correo</div><div class="cta-s">knockoutboxingclub01@gmail.com</div></div>
       </a>
       <div style="display:flex;gap:10px">
-        <a href="https://www.instagram.com/k.o.boxing.club/" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:var(--gt);border:1px solid var(--borde);padding:10px;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none;color:var(--negro)">📸 Instagram</a>
-        <a href="https://www.facebook.com/KnockoutBoxingClub23" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:var(--gt);border:1px solid var(--borde);padding:10px;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none;color:var(--negro)">👍 Facebook</a>
+        <a href="https://www.instagram.com/k.o.boxing.club/" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:1px solid var(--borde);padding:10px;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none;color:var(--negro)">📸 Instagram</a>
+        <a href="https://www.facebook.com/KnockoutBoxingClub23" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:1px solid var(--borde);padding:10px;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none;color:var(--negro)">👍 Facebook</a>
       </div>
     </div>
   </div>
@@ -381,11 +541,11 @@ footer{flex-direction:column;text-align:center}
 
 <footer>
   <div class="fl">
-    <div class="fl-ic">🥊</div>
-    <div><div class="fl-t">Knock Out Boxing Club</div><div class="fl-s">Calzada de Tlalpan 450, Piso 1 · Iztacalco · CDMX</div></div>
+    <div class="fl-ic"><img src="images/logo-knockout-boxing-club.jpg" alt="Knock Out Boxing Club Logo"></div>
+    <div><div class="fl-t">Knock Out Boxing Club</div><div class="fl-s">Calzada de Tlalpan 450, Piso 1 · Metro Viaducto L2 · Iztacalco · CDMX</div></div>
   </div>
   <div class="ft">Train · Fight · Win</div>
-  <div class="fc">© 2025 Knock Out Boxing Club · Todos los derechos reservados</div>
+  <div class="fc">© 2026 Knock Out Boxing Club · Todos los derechos reservados</div>
 </footer>
 
 </body>
